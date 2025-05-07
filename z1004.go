@@ -1,9 +1,3 @@
-package main
-
-import (
-    "fmt"
-)
-
 func longestOnes(nums []int, k int) int {
     maxCons := 0
     st := 0
@@ -29,13 +23,4 @@ func longestOnes(nums []int, k int) int {
     }
     maxCons = max(maxCons, en - st + 1)
     return maxCons
-}
-
-func main() {
-    nums1 := []int{1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0}
-    k1 := 2
-    fmt.Println(longestOnes(nums1, k1)) 
-    nums2 := []int{0,0,0,1}
-    k2 := 4
-    fmt.Println(longestOnes(nums2, k2))
 }
